@@ -1,2 +1,2 @@
-# panel-UI
-FlyOS Cloud panel UI. simple and clear
+# FlyOS_Login
+FlyOS Login static page ^v^

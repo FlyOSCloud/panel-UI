@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link
+  href="/static/css/fonts.min.css"
+  rel="stylesheet"
+  crossorigin="anonymous">
+    <link
+  href="/static/css/windows-ui-web.min.css"
+  rel="stylesheet"
+  crossorigin="anonymous">
+    <link
+  href="/static/css/app-config.css"
+  rel="stylesheet"
+  crossorigin="anonymous">
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+
+        <meta charset="utf-8">
+        <title>FlyOS Cloud - Panel</title>
+    </head>
+    <body>
+        
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">FlyOS Cloud Panel</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Panel</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown link
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        <form method="get" action="/logout">
+            <h4>Hey, {{username}}</h4>  <button class="app-btn animate" type="submit">
+            <span>Logout</span>
+          </button>
+        </form>
+        <h3>System overview</h3>
+        <ul class="list-group">
+          <li class="list-group-item">System kernel info: FlyOS-Cloud {{osuname}}</li>
+          <li class="list-group-item">Network Configuration:{{network_conf}}
+            <form method="get" action="/panel/internetip">
+                <button class="app-btn btn-primary animate" type="submit">
+              <span>Show Internet IP</span>
+            </button>
+          </form>
+          </li>
+          <li class="list-group-item">A third item</li>
+          <li class="list-group-item">A fourth item</li>
+          <li class="list-group-item">And a fifth one</li>
+        </ul>
+        <script src="/static/js/bootstrap.bundle.js"></script>
+<script
+src="/static/js/windows-ui-web.min.js"
+crossorigin="anonymous">
+</script>
+    </body>
+</html>

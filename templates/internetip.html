@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+
+        <meta charset="utf-8">
+        <title>FlyOS Cloud - PInternetIP</title>
+    </head>
+    <body>
+        <!-- As a link -->
+<nav class="navbar navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">FlyOS Cloud</a>
+    </div>
+  </nav>
+  
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Panel</a></li>
+              <li class="breadcrumb-item active" aria-current="page"> Show Internet IP</li>
+            </ol>
+          </nav>
+          <div class="card" style="width: 18rem;">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><h3>Your Internet IP: {{internetip}}</h3></li>
+              <li class="list-group-item"><h3>Your Intranet IP: {{netip}}</h3></li>
+              <li class="list-group-item">This result is not necessarily accurate. This service is provided by a third party</li>
+            </ul>
+          </div>
+        <script src="/static/js/bootstrap.bundle.js"></script>
+    </body>
+</html>
